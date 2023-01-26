@@ -1,0 +1,3 @@
+7, Irons, Jeremy, 874569, actor
+876, Obama, Barak, 10875555978, ex-president
+55, петров, сергей, 335778, пенсионер
