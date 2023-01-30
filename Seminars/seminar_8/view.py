@@ -4,19 +4,14 @@ def get_operation():
     return operation
 
 
-students = {}
-tasks = []
-names = []
-
-
 def get_student():
-    Name = input('Введите имя и фамилию: ')
-    return Name
+    name = input('Введите имя и фамилию: ')
+    return name
 
 
-def get_class():
-    getclass = input('Введите предмет: ')
-    return getclass
+def get_task():
+    task = input('Введите предмет: ')
+    return task
 
 
 def get_mark():
@@ -24,21 +19,7 @@ def get_mark():
     return mark
 
 
-def add_student(student):
-    global students
-    if student not in names:
-        names.append(student)
-        students[student] = {}
-
-
-def add_class(task):
-    global students
-    if task not in tasks:
-        tasks.append(task)
-        for name in names:
-            students[name][task] = []
-
-
-def add_mark(student, task, mark):
-    global students
-    students[student][task].append(mark)
+def choice_student():
+    name = input('Введите имя и фамилию: ')
+    task = input('Введите предмет: ')
+    return name, task
